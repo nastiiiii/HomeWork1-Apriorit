@@ -1,9 +1,8 @@
 #pragma once
-#include <fstream>
-#include <iostream>
 
-#include "../../../FileProperties.h"
-#include "../VirtualReportPrinter/VirtualReportPrinter.h"
+#include "VirtualReportPrinter.h"
+
+struct FileProperties;
 
 class XmlReportPrinter : public ReportPrinter {
 public:

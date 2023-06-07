@@ -4,8 +4,8 @@
 #include <vector>
 
 #include "FileProperties.h"
-#include "ReportPrinterFactory/Printers/VirtualReportPrinter/VirtualReportPrinter.h"
-#include "ReportPrinterFactory/ReportPrinterFactory.h"
+#include "ReportPrinter/Factory/ReportPrinterFactory.h"
+#include "ReportPrinter/Printers/VirtualReportPrinter/VirtualReportPrinter.h"
 #include "Utilities/DirectoryFilesInfoFetcher.h"
 
 

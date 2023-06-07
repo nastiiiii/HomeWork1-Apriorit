@@ -1,4 +1,7 @@
 #include "XmlReportPrinter.h"
+#include <iostream>
+#include "FileProperties.h"
+
 namespace {
     using Tag = std::string;
     struct TagWrapper {

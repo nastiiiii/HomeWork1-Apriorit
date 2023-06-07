@@ -1,5 +1,5 @@
 #include "DirectoryFilesInfoFetcher.h"
-#include "../FileProperties.h"
+#include "FileProperties.h"
 #include <ctime>
 #include <iostream>
 
@@ -24,7 +24,6 @@ namespace {
 
                 item.properties[static_cast<size_t>(FileProperty::SIZE)] = fs::is_directory(file) ? "<DIR>" : std::to_string(fs::file_size(file));
 
-
                 std::time_t ctime = fs::creation_time(file);
                 item.properties[static_cast<size_t>(FileProperty::CREATION_TIME)] = formatWithoutNewLine(ctime);
 
@@ -34,7 +33,7 @@ namespace {
                 const bool readOnly = (fs::status(file.path()).permissions() & fs::perms::owner_write) == fs::perms::no_perms;
                 item.properties[static_cast<size_t>(FileProperty::PERMISSION)] = readOnly ? "Read-Only" : "Not Read-Only";
 
-                item.properties[static_cast<size_t>(FileProperty::EXTENSION)] = fs::extension(file.path());
+                item.properties[static_cast<size_t>(FileProperty::EXTENSION)] = file.path().extension().string();
 
                 res.push_back(std::move(item));
 

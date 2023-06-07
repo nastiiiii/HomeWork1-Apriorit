@@ -1,5 +1,7 @@
 #include "CsvReportPrinter.h"
-#include <iomanip>
+#include "FileProperties.h"
+#include <iostream>
+#include <string>
 
 void CsvReportPrinter::printReport(std::string &&reportName, const std::vector<FileProperties> &items) const {
     auto file = createFile(std::move(reportName));

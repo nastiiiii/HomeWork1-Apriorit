@@ -1,10 +1,8 @@
 #pragma once
-#include <fstream>
-#include <iostream>
-#include <string>
+#include "VirtualReportPrinter.h"
 
-#include "../../../FileProperties.h"
-#include "../VirtualReportPrinter/VirtualReportPrinter.h"
+struct FileProperties;
+
 class CsvReportPrinter : public ReportPrinter {
 public:
     void printReport(std::string &&reportName, const std::vector<FileProperties> &items) const final;

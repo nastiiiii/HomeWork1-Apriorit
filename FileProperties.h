@@ -1,6 +1,7 @@
 #pragma once
 #include <array>
 #include <string>
+#include <stdexcept>
 
 enum class FileProperty : size_t {
     NAME,
@@ -34,6 +35,7 @@ inline std::string filePropertyToString(FileProperty fileProperty) {
             return "Permission";
         case FileProperty::EXTENSION:
             return "Extension";
+        default: throw std::runtime_error("Unexpected file property");
     }
-    throw std::runtime_error("Unexpected file property");
+
 }
