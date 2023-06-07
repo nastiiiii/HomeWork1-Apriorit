@@ -1,5 +1,5 @@
 #include "CsvReportPrinter.h"
-#include "FileProperties.h"
+#include "../../FileProperties.h"
 #include <iostream>
 #include <string>
 

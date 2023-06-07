@@ -1,6 +1,6 @@
 #include "XmlReportPrinter.h"
 #include <iostream>
-#include "FileProperties.h"
+#include "../../FileProperties.h"
 
 namespace {
     using Tag = std::string;

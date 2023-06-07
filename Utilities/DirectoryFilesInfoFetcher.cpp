@@ -1,5 +1,5 @@
 #include "DirectoryFilesInfoFetcher.h"
-#include "FileProperties.h"
+#include "../../FileProperties.h"
 #include <ctime>
 #include <iostream>
 

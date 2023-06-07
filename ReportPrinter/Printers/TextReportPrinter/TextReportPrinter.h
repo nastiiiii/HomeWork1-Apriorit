@@ -1,5 +1,5 @@
 #pragma once
-#include "../VirtualReportPrinter/VirtualReportPrinter.h"
+#include "VirtualReportPrinter.h"
 
 struct FileProperties;
 

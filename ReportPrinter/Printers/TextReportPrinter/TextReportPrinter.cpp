@@ -1,5 +1,5 @@
 #include "TextReportPrinter.h"
-#include "FileProperties.h"
+#include "../../FileProperties.h"
 #include <iostream>
 
 void TextReportPrinter::printReport(std::string &&reportName, const std::vector<FileProperties> &items) const {
